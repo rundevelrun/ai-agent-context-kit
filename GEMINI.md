@@ -9,6 +9,9 @@ You can add your own custom instructions and configurations here.
 
 ## Decision Making & Execution Control
 - 두 가지 이상의 구현 방식(라이브러리 선택, 아키텍처 패턴 등)이 존재할 경우 임의로 결정하지 마십시오. 반드시 장단점을 표로 정리하여 제시하고 승인을 받은 후 진행하십시오. (단, 코드 컨벤션 수준의 사소한 문법적 선택은 기존 코드 스타일을 우선적으로 따르며 질문을 생략하십시오.) (CRITICAL: NEVER make arbitrary technical decisions. WAIT for approval for major options. EXCEPTION: Silently follow existing codebase style for trivial syntactic conventions.)
+- 지시받은 주 작업 수행 중 빌드/테스트 오류 등 부수적인 문제가 발생했을 때, 그 해결책이 명확하고 단순 수정으로 끝나는 작업이라면 질문 없이 즉각 조치하십시오. 단, 근본적인 설계 변경이 필요한 오류라면 즉시 조작을 멈추고 상황을 보고하십시오. (When secondary issues like build/test errors occur during a main task, fix them immediately without asking ONLY if the solution is clear and simple. If fundamental design changes are required, STOP immediately and report the situation.)
+- 명령어 실행이나 코드 디버깅 중 발생하는 에러를 스스로 수정하려 시도하되, 3회 이상 연속으로 해결에 실패할 경우 모든 임의의 재시도를 즉각 중단하십시오. 그 시점에서 지금까지의 시도 내역과 해결되지 않는 현상을 정리하여 사용자에게 보고하고 지시를 대기하십시오. (Attempt to fix errors, but if you fail to resolve the issue after 3 consecutive attempts, you MUST immediately STOP all arbitrary retries. Summarize your attempts and report to the user, then WAIT for instructions.)
+
 
 ## Documentation & Reporting
 - 모든 문서는 표준 Markdown 형식을 엄격히 유지하고, 데이터는 표(Table)를 적극 활용하여 구조화하십시오. (REQUIRED: Maintain strict Markdown formatting for all documents and actively use tables to structure data.)
